@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+#root {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(251, 251, 251);
+}
+
+header {
+    height: 50px;
+    width: 100vw;
+    background-color: rgb(49, 49, 49);
+    position: fixed;
+    top: 0;
+}
+
+main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.App {
+    width: 1000px;
+}
+
+/* Стили к открытым постам */
+.post__wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.post {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 2px solid rgb(0, 180, 224);
+    padding: 20px 0;
+}
+
+.post__title {
+    font-size: 20px;
+    margin-top: .4em;
+}
+
+/* Стили к постам на странице "Посты" */
+.PostList > h1 {
+    text-align: center;
+}
+
+.post__general {
+    padding: 15px;
+    margin: 15px;
+    border: 2px solid rgb(0, 218, 218);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.post__content {
+    width: 80%;
+}
+
+.post__btns {
+    display: flex;
+    padding-left: .3em;
+}
+
+/* Анимация только началась */
+.post-enter {
+    opacity: 1;
+    transform: translateX(-850px);
+}
+
+.post-enter-active {
+    transform: translateX(0px);
+    transition: all 500ms ease-in;
+}
+
+.post-exit {
+    opacity: 1; 
+}
+
+.post-exit-active {
+    transform: translateX(-850px);
+    transition: all 500ms ease-in;
+}
+
+.pages__switcher {
+    margin-top: 30px;
+    display: flex;
+}
+
+.page {
+    padding: 10px;
+    border: 1px solid rgb(0, 218, 218);
+    cursor: pointer;
+}
+.page.current {
+    border: 2px solid orange;
+    font-weight: bold;
+}
+
+@media (max-width: 1280px) {
+    .App {
+        width: 900px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .App {
+        width: 80%;
+    }
+
+    .PostList > h1 {
+        margin: .3em 0;
+    }
+
+    .post__btns {
+        height: 100%;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+}
+
+@media (max-width: 768px) {
+    .App {
+        width: 90%;
+    }
+
+    .PostList > h1 {
+        font-size: 27px;
+    }
+}
+
+@media (max-width: 600px) {
+    .App {
+        width: 95%;
+    }
+}
+
+@media (max-width: 480px) {
+    .post {
+        width: 85%;
+    }
+
+    .post > h1 {
+        font-size: 21px;
+    }
+
+    .post__title {
+        font-size: 17px;
+    }
+}
