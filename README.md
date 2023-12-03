@@ -1,3 +1,18 @@
+# Изученные темы:
+-работа с JSX;
+-работа с состояниями useState, useRef;
+-создание переиспользуемых функциональных компонентов и передача параметров(пропсов);
+-создание управляемых и неуправляемых компонентов;
+-использование css модулей;
+-кеширование через useMemo;
+-React Devtools. Инструменты разработчика React;
+-Декомпозиция. Кастомные хуки;
+-Обычная пагинация, постраничный вывод элементов;
+-Динамическая пагинация;
+-BrowserRouter. Постраничная навигация. Компоненты BrowserRouter, Route, Link;
+-Динамическая навигация. useParams, Компонент Navigate для редиректа. Приватные и публичные маршруты навигации;
+-а также такие хуки, как useEffect(работа с сервером, axios), useContext.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
